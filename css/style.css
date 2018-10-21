@@ -128,10 +128,61 @@ body {
     }
 }
 
-
 .register-bottom-block button:focus {
     outline: 0;
 }
 .register-bottom-block button:hover {
     cursor: pointer;
+}
+.bhr {
+    height: 3px;
+    width: 100%;
+}
+.bhr-light {
+    background-color: #14e0b8;
+}
+.bhr-white {
+    background-color: white;
+}
+.flex-spec-block {
+    display: flex;
+}
+.spec-block {
+    width: 25%;
+}
+@media only screen and (max-width: 768px) {
+    .flex-spec-block {
+        flex-wrap: wrap;
+    }
+    .spec-block{
+        width: 50%;
+    }
+    .spec-block-light + .spec-block-dark {
+        order: 4;
+    }
+}
+.spec-block-dark {
+    background-color: #1c2a33;
+}
+.spec-block-light {
+    background-color: #19ceab;
+}
+.spec-block {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12pt;
+}
+.spec-block i {
+    font-size: 35pt;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.spec-block p {
+    margin-bottom: 20px;
+}
+.spec-block-dark p, .spec-block-dark i {
+    color: #19ceab;
+}
+.spec-block-light p, .spec-block-light i {
+    color: #1c2a33;
 }
