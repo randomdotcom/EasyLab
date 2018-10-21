@@ -60,13 +60,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="574" />
+          <entry key="css" value="582" />
           <entry key="html" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="574" />
+          <entry key="CSS" value="582" />
           <entry key="HTML" value="114" />
         </counts>
       </usages-collector>
@@ -96,8 +96,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
-                  <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+                <state relative-caret-position="306">
+                  <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -131,8 +131,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="392" />
-    <option name="y" value="47" />
+    <option name="x" value="78" />
+    <option name="y" value="82" />
     <option name="width" value="1179" />
     <option name="height" value="677" />
   </component>
@@ -187,15 +187,15 @@
       <workItem from="1539468086806" duration="426000" />
       <workItem from="1539694409799" duration="14922000" />
       <workItem from="1539714581256" duration="5520000" />
-      <workItem from="1540145370004" duration="6906000" />
+      <workItem from="1540145370004" duration="7183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31679000" />
+    <option name="totallyTimeSpent" value="31956000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="392" y="47" width="1179" height="677" extended-state="0" />
+    <frame x="78" y="82" width="1179" height="677" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23642732" />
@@ -237,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        <state relative-caret-position="306">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
     </entry>
