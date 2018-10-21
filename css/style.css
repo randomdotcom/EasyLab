@@ -14,19 +14,9 @@ body {
     width: 100%;
     background: url('../img/laptop.jpg') center center;
     background-size: cover;
-
-
-//height: 641px;
 }
 .navbar {
     padding: 0;
-}
-@media only screen and (max-width: 768px) {
-    .navbar {
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
 }
 
 .header {
@@ -54,15 +44,22 @@ body {
 .navbar-toggler:active {
     opacity: 0.5;
 }
-
-
-
 .register-block {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     padding-top: 23.73%;
     padding-bottom: 23.73%;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .register-block {
+        padding-top: 31%;
+    }
 }
 .register-top-block {
     background-color: rgba(31, 71, 70, 0.79);
