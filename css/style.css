@@ -20,10 +20,15 @@ body {
 }
 .navbar {
     padding: 0;
-    position: fixed;
-    right: 0;
-    left: 0;
 }
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+
 .header {
     background-color: rgba(66, 67, 69, 0.67);
 }
