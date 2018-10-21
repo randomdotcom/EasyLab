@@ -20,6 +20,9 @@ body {
 }
 .navbar {
     padding: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 .header {
     background-color: rgba(66, 67, 69, 0.67);
@@ -56,7 +59,28 @@ body {
     padding-top: 23.73%;
     padding-bottom: 23.73%;
 }
-
+.register-top-block {
+    background-color: rgba(31, 71, 70, 0.79);
+}
+.register-top-h {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 21pt;
+    color: #f2f2f2;
+    margin-top: 5px;
+    margin-left: 53px;
+}
+.register-top-block p {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 17pt;
+    text-shadow: 1.5px 1.5px 1px rgba(0,0,0,1);
+    color: #19c7a5;
+    line-height: 1.2;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
 .register-bottom-block {
     background-color: #256f62;
 	width: 40.8%;
@@ -64,93 +88,37 @@ body {
 	justify-content: center;
 	min-width: 456px;
 }
+.register-bottom-block button {
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17pt; /*13*/
+    color: #19d1b5;
+    background-color: #2f8e7d;
+    border: 0;
+    padding: 3px 9px 1px 11px;
+    margin: 2px 166px;
+    box-shadow: 0px 1px 3px 0px rgba(28, 42, 51, 0.65) inset;
+    transition: background-color 0.2s linear,
+                color 0.2s linear;
+}
+.register-bottom-block button:hover {
+    background: #2ead96;
+    color: #256f62;
+}
+.register-bottom-block button i {
+    font-size: 15pt;
+}
+
 @media only screen and (min-width : 496px) {
     .register-top-block {
-        background-color: rgba(31, 71, 70, 0.79);
 		width: 40.8%;
 		min-width: 456px;
-    }
-    .register-top-h {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        font-style: italic;
-        font-size: 21pt;
-        color: #f2f2f2;
-        margin-top: 5px;
-        margin-left: 53px;
-    }
-    .register-top-block p {
-        font-family: 'Poiret One', sans-serif;
-        font-size: 17pt;
-		text-shadow: 1.5px 1.5px 1px rgba(0,0,0,1);
-        color: #19c7a5;
-        line-height: 1.2;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 20px;
-    }
-    .register-bottom-block button {
-		white-space: nowrap;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 17pt; /*13*/
-        color: #19d1b5;
-        background-color: #2f8e7d;
-        border: 0;
-        padding: 8px 9px 8px 11px;
-        margin: 0 166px;
-        box-shadow: 0px 1px 3px 0px rgba(28, 42, 51, 0.65) inset;
-		transition: background-color 0.2s linear;
-    }
-	.register-bottom-block button:hover {
-		background: #2ead96;
-	}
-    .register-bottom-block button i {
-        font-size: 15pt;
-        margin-left: 20px;
     }
 }
 @media only screen and (max-width : 495px) {
     .register-top-block {
-        background-color: rgba(31, 71, 70, 0.79);
-    }
-    .register-top-h {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        font-style: italic;
-        font-size: 21pt;
-        color: #f2f2f2;
-        margin-top: 5px;
-        margin-left: 53px;
-    }
-    .register-top-block p {
-        font-family: 'Poiret One', sans-serif;
-        font-size: 17pt;
-        color: #19c7a5;
-        line-height: 1.2;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 20px;
-    }
-    .register-bottom-block button {
-        white-space: nowrap;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 13pt;
-        color: #19d1b5;
-        background-color: #2f8e7d;
-        border: 0;
-        padding: 3px 10px 3px 11px;
-        margin: 5px 176px;
-		box-shadow: 0px 1px 3px 0px rgba(28, 42, 51, 0.65) inset;
-    	transition: background-color 0.2s linear;
-    }
-	.register-bottom-block button:hover {
-		background: #2ead96;
-	}
-    .register-bottom-block button i {
-        font-size: 15pt;
-        //margin-left: 15px;
+        max-width: 456px;
     }
 }
 
