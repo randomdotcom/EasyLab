@@ -187,9 +187,6 @@ body {
 .spec-block-light p, .spec-block-light i {
     color: #1c2a33;
 }
-.carousel {
-    margin-top: 2px;
-}
 .carousel-inner img {
     //max-height: 641px !important;
     //min-width: 100%;
