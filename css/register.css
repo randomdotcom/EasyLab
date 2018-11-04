@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 100px;
+    background: linear-gradient(to top right, #2d897a 0%, #1c2a33 60%, #2d897a 79%, #1c2a33 100%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 1140px;
+    background-color: #f2f2f2;
+}
+
+.header{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+}
+.main form{
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+}
+form input{
+    display: block;
+    width: 70%;
+}
+form label{
+    text-transform: capitalize;
+}
+#create-profile{
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
