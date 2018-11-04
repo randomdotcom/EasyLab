@@ -28,8 +28,15 @@ body{
     padding: 5%;
     flex-direction: column;
 }
+.form-block{
+    margin-top: 50px;
+}
 form input{
     display: block;
+    width: 100px;
+    margin-bottom: 15px;
+}
+form .input{
     width: 70%;
 }
 form label{

@@ -14,9 +14,33 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Poiret+One|Roboto:100i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index-modal-window.css">
 
 </head>
 <body>
+        <div class="register-form">
+                <div class="user-icon"></div>
+                <div class="pass-icon"></div>
+                <form name="login-form" class="login-form" action="#" method="post">
+
+                    <div class="form-header">
+                        <h1>Авторизация</h1>
+                        <span>Введите ваши регистрационные данные для входа в ваш личный кабинет. </span>
+                    </div>
+
+                    <div class="form-content">
+                        <input name="username" type="text" class="input username" value="Логин" onfocus="this.value=''" />
+                        <input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
+                    </div>
+
+                    <div class="form-footer">
+                        <input type="submit" name="submit" value="ВОЙТИ" class="upgrade-button" />
+                        <a href="register UI.html" class="register">Регистрация</a>
+                    </div>
+
+                </form>
+
+            </div>
     <div class="container container-fluid">
         <div class="header-register-image-block">
             <nav class="header navbar navbar-expand-md navbar-dark ">
@@ -39,7 +63,7 @@
                         лабораторных работ.</p>
                 </div>
                 <div class="register-bottom-block">
-                    <button>НАЧАТЬ <i class="fa fa-check" aria-hidden="true"></i></button>
+                    <button id="start">НАЧАТЬ <i class="fa fa-check" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -105,5 +129,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
