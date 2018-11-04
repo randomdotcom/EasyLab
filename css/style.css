@@ -191,7 +191,7 @@ body {
     //max-height: 641px !important;
     //min-width: 100%;
 }
-.carousel-caption h3,p {
+.carousel-caption {
     font-family: 'Poiret One', sans-serif;
 }
 .carousel-caption h3 {

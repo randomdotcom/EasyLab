@@ -1,5 +1,7 @@
 var btnStart = document.getElementById('start');
+var btnClose = document.getElementById('close');
 btnStart.onclick = displayRegister;
+btnClose.onclick = hiddenRegister;
 var form = document.getElementsByClassName('register-form')[0];
 var container = document.getElementsByClassName('container')[0];
 function displayRegister(){
