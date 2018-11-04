@@ -103,3 +103,77 @@ body {
     background-color: #1c2a33;
     height: 1000px;
 }
+.tips ul {
+    font-family: 'Century Gothic', cursive;
+    font-weight: 100;
+    display: flex;
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14pt;
+}
+.tips li {
+    margin-right: 20px;
+    margin-left: 2px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.tips li:first-child {
+    margin-left: 15px;
+}
+.tips ul {
+
+}
+.ul-labs li {
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16pt;
+    cursor: default;
+}
+.date {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: 100;
+    font-size: 15pt;
+}
+.date-success {
+    color: forestgreen;
+}
+.date-burn {
+    color: red;
+}
+.date-timeisup {
+    text-decoration: line-through;
+}
+.lesson-name-block {
+    margin-right: 15px;
+    background-color: #1c2a33;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.lesson-name {
+    color: #f2f2f2;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .studentname {
+        margin-right: 3px;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .main-navbar {
+        width: 100%;
+    }
+}
