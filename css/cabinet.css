@@ -12,7 +12,7 @@ body {
     height: 2000px;
     max-width: 1140px;
     background-color: #f2f2f2;
-    box-shadow: 0px 0px 41px 2px rgba(28, 42, 51, 0.58);
+    box-shadow: 0px 0px 41px 2px rgba(22, 22, 22, 0.58);
     margin: 40px auto;
     overflow: hidden;
 }
@@ -30,7 +30,7 @@ body {
 }
 .logo-text {
     font-family: 'Comfortaa', cursive;
-    font-size: 18pt;
+    font-size: 20pt;
     color: #22c4a8;
 }
 .studentinfo {
@@ -107,23 +107,23 @@ body {
     font-family: 'Century Gothic', cursive;
     font-weight: 100;
     display: flex;
-    background-color: #f2f2f2;
+    justify-content: space-around;
+    background-color: #22c4a8;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14pt;
+    cursor: default;
 }
 .tips li {
-    margin-right: 20px;
-    margin-left: 2px;
+    background-color: #f2f2f2;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding: 7px 12px;
+    border-radius: 20px;
 }
-.tips li:first-child {
-    margin-left: 15px;
-}
-.tips ul {
-
+.tips ul li .text{
+    margin-left: 5px;
 }
 .ul-labs li {
     background-color: #f2f2f2;
@@ -132,8 +132,16 @@ body {
     align-items: center;
     font-family: 'Comfortaa', cursive;
     font-size: 16pt;
-    cursor: default;
+    cursor: pointer;
 }
+.ul-labs li:hover .lesson-name-block {
+    background-color: #22c4a8;
+}
+.ul-labs li:hover .lesson-name {
+    color: #1c2a33;
+    text-shadow: 1px 1.3px 1px rgba(0,0,0,1);
+ }
+
 .date {
     margin-right: 15px;
     margin-left: 15px;
@@ -156,12 +164,60 @@ body {
     border-radius: 20px;
     margin-top: 3px;
     margin-bottom: 3px;
+    transition: background-color 0.1s linear;
 }
 .lesson-name {
     color: #f2f2f2;
-    
+    transition: color 0.1s linear,
+                text-shadow 0.1s linear;
+}
+.main-navbar-header {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.main-navbar-header p {
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
+    color: #1c2a33;
+}
+.main-navbar-filters li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    color: #1f1f1f;
+    text-align: end;
+    background-color: #f2f2f2;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.main-navbar-filters li p {
+    margin-right: 10px;
+    transition: color 0.1s linear;
+}
+.main-navbar-filters li:hover p {
+    color: #22c4a8;
 }
 
+.main-navbar-filters li:first-child {
+    margin-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 930px) {
+    .tips li {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 
 @media only screen and (max-width: 768px) {
     .studentname {
