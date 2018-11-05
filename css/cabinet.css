@@ -9,7 +9,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 2000px;
     max-width: 1140px;
     background-color: #f2f2f2;
     box-shadow: 0px 0px 41px 2px rgba(22, 22, 22, 0.58);
@@ -96,12 +95,10 @@ body {
 .main-content {
     width: 75%;
     background-color: #22c4a8;
-    height: 1000px;
 }
 .main-navbar {
     width: 25%;
     background-color: #1c2a33;
-    height: 1000px;
 }
 .tips ul {
     font-family: 'Century Gothic', cursive;
@@ -130,10 +127,34 @@ body {
     margin-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Comfortaa', cursive;
     font-size: 16pt;
     cursor: pointer;
+    transition: filter 0.1s linear;
 }
+.info-block {
+    display: flex;
+    align-items: center;
+}
+.ul-labs li:last-child {
+    margin-bottom: 50px;
+}
+.ul-labs .burned {
+    filter: blur(1.5px)
+}
+.ul-labs .burned:hover {
+    filter: blur(0px);
+}
+
+.ul-labs i {
+    color: forestgreen;
+    margin-right: 15px;
+}
+.ul-labs li:hover i {
+    color: #1c2a33;
+}
+
 .ul-labs li:hover .lesson-name-block {
     background-color: #22c4a8;
 }
@@ -141,6 +162,8 @@ body {
     color: #1c2a33;
     text-shadow: 1px 1.3px 1px rgba(0,0,0,1);
  }
+
+
 
 .date {
     margin-right: 15px;
@@ -204,9 +227,16 @@ body {
 .main-navbar-filters li:hover p {
     color: #22c4a8;
 }
-
+.active {
+    color: #288b7b;
+}
 .main-navbar-filters li:first-child {
     margin-top: 20px;
+}
+
+.chin {
+    height: 40px;
+    background-color: rgb(49,49,49);
 }
 
 
@@ -218,8 +248,14 @@ body {
         padding-top: 3px;
         padding-bottom: 3px;
     }
+}
 
 @media only screen and (max-width: 768px) {
+    .main-navbar-filters li {
+        margin-left: 0;
+        border-radius: 0;
+        text-align: center;
+    }
     .studentname {
         margin-right: 3px;
     }
