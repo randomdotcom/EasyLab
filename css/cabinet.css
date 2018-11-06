@@ -180,6 +180,9 @@ body {
 .date-timeisup {
     text-decoration: line-through;
 }
+.date-checking {
+    color: #3498db;
+}
 .lesson-name-block {
     margin-right: 15px;
     background-color: #1c2a33;
@@ -268,4 +271,53 @@ body {
     .main-navbar {
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+.debts-teacher-block {
+    height: 100%;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    transition: background-color 0.1s linear;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid white;
+}
+.debts-teacher-block:hover {
+    background-color: #f2f2f2;
+}
+.debts-teacher-text {
+    cursor: pointer;
+    color: #3498db;
+    font-family: 'Roboto', cursive;
+    text-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.3);
+}
+.lab-menu {
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.lab-create {
+    width: 50%;
+    border-right: 1px solid #22c4a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.lab-on-check {
+    width: 50%;
+    border-left: 1px solid #22c4a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
