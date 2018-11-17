@@ -134,8 +134,9 @@ body {
     cursor: pointer;
     transition: filter 0.1s linear;
 }
-.info-block {
+.ul-labs li div {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .ul-labs li:last-child {
@@ -345,4 +346,10 @@ body {
 }
 .ul-labs li .text-black {
     color: #1f1f1f;
+}
+.countLabsForCheck {
+    cursor: pointer;
+    color: #1f1f1f;
+    font-family: 'Century Gothic', cursive;
+    margin-right: 10px;
 }
