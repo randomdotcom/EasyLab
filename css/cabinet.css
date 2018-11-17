@@ -31,10 +31,11 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size: 20pt;
     color: #22c4a8;
+    cursor: default;
 }
 .studentinfo {
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -209,18 +210,21 @@ body {
     font-size: 20pt;
     font-family: 'Roboto', sans-serif;
     color: #1c2a33;
+    cursor: default;
 }
 .main-navbar-filters li {
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     margin-bottom: 10px;
-    color: #1f1f1f;
+    color: #ccc;
     text-align: end;
-    background-color: #f2f2f2;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    margin-left: 20px;
+    background-color: #1f1f1f;
+    //border-top-left-radius: 25px;
+    //border-bottom-left-radius: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //margin-left: 20px;
     cursor: pointer;
 }
 .main-navbar-filters li p {
@@ -300,24 +304,45 @@ body {
     font-family: 'Roboto', cursive;
     text-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.3);
 }
-.lab-menu {
+.otherTeachersPage-block {
     display: flex;
-    width: 100%;
-    background-color: #f2f2f2;
-}
-.lab-create {
-    width: 50%;
-    border-right: 1px solid #22c4a8;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
-.lab-on-check {
-    width: 50%;
-    border-left: 1px solid #22c4a8;
+.otherTeachersPage {
+    background-color: #f2f2f2;
+    margin-right: 30px;
+    padding: 7px 12px;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.35);
+    transition: background-color 0.1s linear;
+    cursor: pointer;
+}
+.otherTeachersPage-text {
+    color: #1f1f1f;
+    font-family: 'Century Gothic', cursive;
+    font-weight: 100;
+    font-size: 14pt;
+}
+.otherTeachersPage .icon-newLab {
+    font-size: 15pt;
+    margin-left: 10px;
+    transition: color 0.1s linear;
+}
+.otherTeachersPage:hover .icon-newLab {
+    color: #22c4a8;
+}
+.otherTeachersPage:hover {
+    background-color: rgba(242, 242, 242,0.9);
+}
+.ul-labs li .text-blue {
+    color: #3498db;
+}
+.ul-labs li .text-black {
+    color: #1f1f1f;
 }
