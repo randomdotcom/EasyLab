@@ -308,7 +308,7 @@ body {
 .otherTeachersPage-block {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -341,12 +341,35 @@ body {
 .otherTeachersPage:hover {
     background-color: rgba(242, 242, 242,0.9);
 }
+.tipForTeacher {
+    background-color: #f2f2f2;
+    margin-left: 30px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.tipForTeacher-text {
+    color: #1f1f1f;
+    font-family: 'Century Gothic', cursive;
+    font-weight: 100;
+    font-size: 14pt;
+    display: flex;
+}
+.tipForTeacher .text {
+    margin-left: 5px;
+}
+
 .ul-labs li .text-blue {
     color: #3498db;
 }
 .ul-labs li .text-black {
     color: #1f1f1f;
 }
+
+
 .countLabsForCheck {
     cursor: pointer;
     color: #1f1f1f;
