@@ -42,16 +42,20 @@
                 </ul>
             </div>
             <div class="main-navbar">
-                <div class="main-navbar-header"><p>Предметы</p></div>
-                <ul class="main-navbar-filters">
-                    <li><p>ОАИП</p></li>
-                    <li><p>СПО</p></li>
-                    <li><p>СиАОД</p></li>
-                    <li><p>+</p></li>
-                </ul>
+                <div>
+                    <div class="main-navbar-header"><p>Предметы</p></div>
+                    <ul class="main-navbar-filters">
+                        <li class="listObject"><div><i class="fa fa-trash editObject" aria-hidden="true"></div></i><p>ОАИП</p></li>
+                        <li class="listObject"><div><i class="fa fa-trash editObject" aria-hidden="true"></div></i><p>СПО</p></li>
+                        <li class="listObject"><div><i class="fa fa-trash editObject" aria-hidden="true"></div></i><p>СиАОД</p></li>
+                    </ul>
+                    <div class="addButton"><i class="fa fa-plus-circle addButtonIcon" aria-hidden="true"></i></div>
+                </div>
+                <input type="submit" name="submit" value="Редактировать" id="objectsEditButton" onclick="ClickEditButton()"/>
             </div>
         </main>
         <div class="chin"></div>
     </div>
+    <script src="js/teacherscript.js"></script>
 </body>
 </html>
