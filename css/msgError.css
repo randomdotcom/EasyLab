@@ -1,0 +1,75 @@
+.msgError-body{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+.errorMsg-form {
+    width: 300px;
+    margin: 0 auto;
+    position: sticky;
+    z-index: 5;
+    top: 40vh;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.close-icon-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icon-close {
+    background-color: transparent;
+    border-width: 0;
+    cursor: pointer;
+    transition: opacity 0.1s linear;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.icon-close:hover {
+    opacity: 0.7;
+}
+
+.textMsg-block {
+    background-color: #d4dedf;
+    overflow: auto;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.textMsg {
+    color: darkred;
+    font-family: 'Comfortaa', cursive;
+}
+
+.tipAboutClose-block {
+    z-index: 5;
+    position: sticky;
+    margin: 0 auto;
+    width: 100wh;
+    top: 90vh;
+    text-align: center;
+    cursor: default;
+}
+.tipAboutClose {
+    font-size: 28pt;
+    color: rgba(242,242,242,0.3);
+    text-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    user-select: none;  
+}
