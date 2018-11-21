@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
+    <div id="msg-body" class="msg-body" onclick="hiddenError()">
+        <form name="errorMsg-form" class="errorMsg-form" action="#" method="post">
+            <div class="close-icon-block"><i id="closeErrorMsg" class="fa fa-times icon-close" aria-hidden="true"></i></div>
+            <div class="textMsg-block"><p class="textMsg">Удалите лабораторные с этим предметом.</p></div>
+        </form>
+        <div class="tipAboutClose-block"><p class="tipAboutClose">Нажмите в любом месте чтобы закрыть</p></div>
+    </div>
     <div class="container">
         <header class="header">
             <div class="logo-block"><p class="logo-text">EasyLab</p></div>
@@ -52,10 +59,12 @@
                     <div class="addButton"><i class="fa fa-plus-circle addButtonIcon" aria-hidden="true"></i></div>
                 </div>
                 <input type="submit" name="submit" value="Редактировать" id="objectsEditButton" onclick="ClickEditButton()"/>
+                <input type="submit" name="submit" value="Ошибка" id="errorMsg" onclick="displayError()"/>
             </div>
         </main>
         <div class="chin"></div>
     </div>
     <script src="js/teacherscript.js"></script>
+    <script src="js/error-msg.js"></script>
 </body>
 </html>
