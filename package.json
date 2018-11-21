@@ -1,0 +1,23 @@
+{
+  "name": "easylab",
+  "version": "0.9.0",
+  "description": "pre-alpha",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randomdotcom/randomdotcom.github.io.git"
+  },
+  "author": "maksim lin, maksim lipenko, artem shlapakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randomdotcom/randomdotcom.github.io/issues"
+  },
+  "homepage": "https://github.com/randomdotcom/randomdotcom.github.io#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
