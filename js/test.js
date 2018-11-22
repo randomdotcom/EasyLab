@@ -17,6 +17,7 @@ function showTest() {
     countNumber = 0;
     testBlock.style.display = "block";
     renderTest();
+    access = false;
 }
 
 function giveAccess(access) {
