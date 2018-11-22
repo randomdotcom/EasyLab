@@ -10,7 +10,7 @@
     z-index: 2;
 }
 .test{
-    padding: 10px;
+    
     color:white;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,7 @@
 
 .answer, .quastion, .button{
     margin-top: 5%;
+    padding: 10px;
 }
 
 #next-btn{
