@@ -1,9 +1,62 @@
-.test{
+.container-for-test{
     display: none;
     position: absolute;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
 }
+.test{
+    padding: 10px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    background: #256f62;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.test-title{
+    margin-top: 10%;
+    padding: 10px;
+}
+
+.answer, .quastion, .button{
+    margin-top: 5%;
+}
+
+#next-btn{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #1c2a33;
+    border-width: 0;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75);
+    color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17pt;
+    transition: background-color 0.12s linear;
+    text-transform: uppercase;
+}
+
+#next-btn:focus{
+    outline: none;
+}
+
+#next-btn:hover{
+    background-color: #256f62;
+}
+
+
+

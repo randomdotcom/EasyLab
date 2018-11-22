@@ -7,7 +7,11 @@ nextButton.onclick = nextQuestion;
 var countNumber = 0;
 var answers = document.getElementsByClassName('answer-text');
 var quastion = document.getElementsByClassName('quastion')[0];
-let testBlock = document.getElementsByClassName('test')[0];
+var radios = document.getElementsByName('answer');
+let testBlock = document.getElementsByClassName('container-for-test')[0];
+rightAnswers = [0, 0, 0, 0]
+userAnswers = [];
+var access;
 
 function showTest() {
     countNumber = 0;
@@ -15,8 +19,18 @@ function showTest() {
     renderTest();
 }
 
+function giveAccess(access) {
+    if (access) {
+        alert('Вы получили доступ к лабораторной работе')
+    }
+    else{
+        alert('Доступа нету, попробуйте позже');
+    }
+
+}
+
 function renderTest() {
-    var radios = document.getElementsByName('answer');
+
     for (var i = 0; i < radios.length; i++) {
         radios[i].checked = false;
     }
@@ -49,18 +63,30 @@ function renderTest() {
     for (var i = 0; i < answers.length; i++) {
         answers[i].textContent = test[countNumber].answers[i];
     }
-
-    if (countNumber + 1 == 6) {
-        var success = true;
-        testBlock.style.display = "none";
-        alert('Вы получили доступ к лабораторной работе');
-
-    }
-
-
 }
 
 function nextQuestion() {
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            userAnswers.push(i);
+            break;
+        }
+    }
+
     countNumber++;
-    renderTest();
+
+    if (countNumber == 5) {
+        access = checkAnswer(userAnswers);
+        testBlock.style.display = "none";
+        giveAccess(access);
+    } else {
+        renderTest();
+    }
+}
+
+function checkAnswer(userAnswers) {
+    for (var i = 0; i < rightAnswers.length; i++) {
+        if (userAnswers[i] !== rightAnswers[i]) return false;
+    }
+    return true;
 }
