@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Poiret+One|Roboto:100i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/msgError.css">
+    <link rel="stylesheet" href="css/createObjectForm.css">
+</head>
+<body>
+    <div id="msgCreateObject-body" class="msgCreateObject-body">
+        <form name="CreateObjectMsg-form" class="CreateObjectMsg-form" action="#" method="post">
+            <div class="close-icon-block"><i id="closeCreateObjectMsg" class="fa fa-times icon-close" onclick="hiddenCreateObjectForm()" aria-hidden="true"></i></div>
+            <div class="form">
+                <p class="description">Название предмета: </p>
+                <input type="text" id="objectName">
+                <div class="acceptButton" onclick="addElement()"><p>Добавить</p></div>
+            </div>
+        </form>
+    </div>
+    <div id="msgError-body" class="msgError-body" onclick="hiddenError()">
+        <form name="errorMsg-form" class="errorMsg-form" action="#" method="post">
+            <div class="close-icon-block"><i id="closeErrorMsg" class="fa fa-times icon-close" aria-hidden="true"></i></div>
+            <div class="textMsg-block"><p class="textMsg">Удалите лабораторные с этим предметом.</p></div>
+        </form>
+        <div class="tipAboutClose-block"><p class="tipAboutClose">Нажмите в любом месте чтобы закрыть</p></div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="logo-block"><p class="logo-text">EasyLab</p></div>
+            <div class="studentinfo">
+                <div class="debts-teacher-block" data-toggle="tooltip" data-placement="right" title="Новые работы на проверку"><div class="debts-teacher-text">1</div></div>
+                <p class="studentname">Артём Викторович</p>
+                <div class="avatar"><img class="graduation-cap" src="img/graduation-cap.png"  alt="avatar"></div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-content">
+                <div class="otherTeachersPage-block">
+                    <div class="tipForTeacher">
+                        <div class="tipForTeacher-text"><p class="date-burn">00.00.00<p class="text">- время на исходе</p></p></div>
+                    </div>
+                    <div class="otherTeachersPage">
+                        <p class="otherTeachersPage-text">Создать работу</p>
+                        <i class="fa fa-file icon-newLab" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <ul class="ul-labs">
+                    <li><div><div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">29.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Знакомство с Linux</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-blue" aria-hidden="true"></i></div></li>
+                    <li><div><div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">28.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Организация памяти в Linux</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-blue" aria-hidden="true"></i></div></li>
+                    <li><div><div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Файловая система</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">1</p><i class="fa fa-ellipsis-v text-blue" aria-hidden="true"></i></div></li>
+                    <li><div><div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Массивы, строки</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-blue" aria-hidden="true"></i></div></li>
+                    <li><div><div class="date date-burn" data-toggle="tooltip" data-placement="right" title="Срок сдачи">24.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Алгоритмы ветвления</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-blue" aria-hidden="true"></i></div></li>
+                    <li class="burned"><div><div class="date date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">20.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Типы данных</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-black" aria-hidden="true"></i></div></li>
+                    <li class="burned"><div><div class="date date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">16.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Организация памяти</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-black" aria-hidden="true"></i></div></li>
+                    <li class="burned"><div><div class="date date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">16.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Введение</p></div><div><p class="countLabsForCheck" data-toggle="tooltip" data-placement="right" title="Лабораторных на проверку">0</p><i class="fa fa-ellipsis-v text-black" aria-hidden="true"></i></div></li>
+                </ul>
+            </div>
+            <div class="main-navbar">
+                <div>
+                    <div class="main-navbar-header"><p>Предметы</p></div>
+                    <ul class="main-navbar-filters">
+                        <li class="listObject"><div><i class="fa fa-trash editObject errorMsg" onclick="deleteObjectError()" aria-hidden="true"></div></i><p>ОАИП</p></li>
+                        <li class="listObject"><div><i class="fa fa-trash editObject errorMsg" onclick="deleteObjectError()" aria-hidden="true"></div></i><p>СПО</p></li>
+                    </ul>
+                    <div class="addButton"><i class="fa fa-plus-circle addButtonIcon" aria-hidden="true" onclick="displayCreateObjectForm()"></i></div>
+                </div>
+                <input type="submit" name="submit" value="Редактировать" id="objectsEditButton" onclick="ClickEditButton()"/>
+            </div>
+        </main>
+        <div class="chin"></div>
+    </div>
+    <script src="js/editObjectsButton.js"></script>
+    <script src="js/error-msg.js"></script>
+    <script src="js/createObject.js"></script>
+</body>
+</html>
