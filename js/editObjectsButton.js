@@ -3,8 +3,6 @@ var list = document.getElementsByClassName('listObject');
 var addButton = document.getElementsByClassName('addButton')[0];
 
 function ClickEditButton() {
-    console.log(list);
-
     var block = (objectsList[0].style.display == "block")?true:false;
 
     for (var i = 0; i < objectsList.length; i++) {

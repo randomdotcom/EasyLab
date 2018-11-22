@@ -18,7 +18,7 @@
             <div class="form">
                 <p class="description">Название предмета: </p>
                 <input type="text" id="objectName">
-                <div class="acceptButton" onclick="createObject()"><p>Добавить</p></div>
+                <div class="acceptButton" onclick="addElement()"><p>Добавить</p></div>
             </div>
         </form>
     </div>
@@ -66,7 +66,6 @@
                     <ul class="main-navbar-filters">
                         <li class="listObject"><div><i class="fa fa-trash editObject errorMsg" onclick="deleteObjectError()" aria-hidden="true"></div></i><p>ОАИП</p></li>
                         <li class="listObject"><div><i class="fa fa-trash editObject errorMsg" onclick="deleteObjectError()" aria-hidden="true"></div></i><p>СПО</p></li>
-                        <li class="listObject" id="listObject"><div><i class="fa fa-trash editObject errorMsg" onclick="deleteObject()" aria-hidden="true"></div></i><p>СиАОД</p></li>
                     </ul>
                     <div class="addButton"><i class="fa fa-plus-circle addButtonIcon" aria-hidden="true" onclick="displayCreateObjectForm()"></i></div>
                 </div>
@@ -75,7 +74,7 @@
         </main>
         <div class="chin"></div>
     </div>
-    <script src="js/teacherscript.js"></script>
+    <script src="js/editObjectsButton.js"></script>
     <script src="js/error-msg.js"></script>
     <script src="js/createObject.js"></script>
 </body>
