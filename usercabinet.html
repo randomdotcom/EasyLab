@@ -1,58 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Poiret+One|Roboto:100i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Poiret+One|Roboto:100i,700&amp;subset=cyrillic"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/test.css">
 </head>
+
 <body>
+    <div class="test">
+        <h1 class="test-title">my test</h1>
+        <p class="quastion"></p>
+        <div class="answer">
+            <span class="answer-text"></span>
+            <input type="radio" name="answer">
+        </div>
+
+        <div class="answer">
+            <span class="answer-text"></span>
+            <input type="radio" name="answer">
+        </div>
+
+        <div class="answer">
+            <span class="answer-text"></span>
+            <input type="radio" name="answer">
+        </div>
+
+        <div class="answer">
+            <span class="answer-text"></span>
+            <input type="radio" name="answer">
+        </div>
+
+        <button id = 'next-btn'>Следующий вопрос</button>
+    </div>
+
+
     <div class="container">
         <header class="header">
-            <div class="logo-block"><p class="logo-text">EasyLab</p></div>
+            <div class="logo-block">
+                <p class="logo-text">EasyLab</p>
+            </div>
             <div class="studentinfo">
-                <div class="debts-block" data-toggle="tooltip" data-placement="right" title="Лабы горят"><div class="debts-text">1</div></div>
+                <div class="debts-block" data-toggle="tooltip" data-placement="right" title="Лабы горят">
+                    <div class="debts-text">1</div>
+                </div>
                 <p class="studentname">Андрей Усов</p>
-                <div class="avatar"><img class="graduation-cap" src="img/graduation-cap.png"  alt="avatar"></div>
+                <div class="avatar"><img class="graduation-cap" src="img/graduation-cap.png" alt="avatar"></div>
             </div>
         </header>
         <main class="main">
-                <div class="main-content">
-                    <div class="tips">
-                        <ul>
-                            <li><p class="date-success">00.00.00</p><p class="text">- сдано</p></li>
-                            <li><p class="date-burn">00.00.00</p><p class="text">- время на исходе</p></li>
-                            <li><p class="date-checking">00.00.00</p><p class="text">- ожидает проверки</p></li>
-                        </ul>
-                    </div>
-                    <ul class="ul-labs">
-                        <li><div class="info-block"><div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">29.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Знакомство с Linux</p></div><i class="fa fa-play" aria-hidden="true"></i></li>
-                        <li><div class="info-block"><div class="date date-success" data-toggle="tooltip" data-placement="right" title="Срок сдачи">28.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Организация памяти в Linux</p></div><i class="fa fa-play" aria-hidden="true"></i></li>
-                        <li><div class="info-block"><div class="date date-checking" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Файловая система</p></div><i class="fa fa-play" aria-hidden="true"></i></li>
-                        <li><div class="info-block"><div class="date date-success" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Массивы, строки</p></div><i class="fa fa-play" aria-hidden="true"></i></li>
-                        <li><div class="info-block"><div class="date date-burn" data-toggle="tooltip" data-placement="right" title="Срок сдачи">24.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Алгоритмы ветвления</p></div><i class="fa fa-play" aria-hidden="true"></i></li>
-                        <li class="burned"><div class="info-block"><div class="date date-burn date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">20.11.18</div><div class="lesson-name-block"><p class="lesson-name">ОАИП</p></div><p>Типы данных</p></li>
-                        <li class="burned"><div class="info-block"><div class="date date-success date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">16.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Организация памяти</p></li>
-                        <li class="burned"><div class="info-block"><div class="date date-success date-timeisup" data-toggle="tooltip" data-placement="right" title="Срок сдачи">16.11.18</div><div class="lesson-name-block"><p class="lesson-name">СПО</p></div><p>Введение</p></li>
+            <div class="main-content">
+                <div class="tips">
+                    <ul>
+                        <li>
+                            <p class="date-success">00.00.00</p>
+                            <p class="text">- сдано</p>
+                        </li>
+                        <li>
+                            <p class="date-burn">00.00.00</p>
+                            <p class="text">- время на исходе</p>
+                        </li>
+                        <li>
+                            <p class="date-checking">00.00.00</p>
+                            <p class="text">- ожидает проверки</p>
+                        </li>
                     </ul>
                 </div>
-                <div class="main-navbar">
-                    <div class="main-navbar-header"><p>Фильтры</p></div>
-                    <ul class="main-navbar-filters">
-                        <li><p class="active">Сдано</p></li>
-                        <li><p class="active">Не сдано</p></li>
-                        <li><p class="active">Время на исходе</p></li>
-                        <li><p class="active">Время вышло</p></li>
-                        <li><p>ОАИП</p></li>
-                        <li><p>СПО</p></li>
-                        <li><p>СиАОД</p></li>
-                    </ul>
+                <ul class="ul-labs">
+                    <li>
+                        <div class="info-block">
+                            <div class="date" data-toggle="tooltip" data-placement="right" title="Срок сдачи">29.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">СПО</p>
+                            </div>
+                            <p>Знакомство с Linux</p>
+                        </div><i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <div class="info-block">
+                            <div class="date date-success" data-toggle="tooltip" data-placement="right" title="Срок сдачи">28.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">СПО</p>
+                            </div>
+                            <p>Организация памяти в Linux</p>
+                        </div><i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <div class="info-block">
+                            <div class="date date-checking" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">СПО</p>
+                            </div>
+                            <p>Файловая система</p>
+                        </div><i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <div class="info-block">
+                            <div class="date date-success" data-toggle="tooltip" data-placement="right" title="Срок сдачи">27.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">ОАИП</p>
+                            </div>
+                            <p>Массивы, строки</p>
+                        </div><i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <div class="info-block">
+                            <div class="date date-burn" data-toggle="tooltip" data-placement="right" title="Срок сдачи">24.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">ОАИП</p>
+                            </div>
+                            <p>Алгоритмы ветвления</p>
+                        </div><i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li class="burned">
+                        <div class="info-block">
+                            <div class="date date-burn date-timeisup" data-toggle="tooltip" data-placement="right"
+                                title="Срок сдачи">20.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">ОАИП</p>
+                            </div>
+                            <p>Типы данных</p>
+                    </li>
+                    <li class="burned">
+                        <div class="info-block">
+                            <div class="date date-success date-timeisup" data-toggle="tooltip" data-placement="right"
+                                title="Срок сдачи">16.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">СПО</p>
+                            </div>
+                            <p>Организация памяти</p>
+                    </li>
+                    <li class="burned">
+                        <div class="info-block">
+                            <div class="date date-success date-timeisup" data-toggle="tooltip" data-placement="right"
+                                title="Срок сдачи">16.11.18</div>
+                            <div class="lesson-name-block">
+                                <p class="lesson-name">СПО</p>
+                            </div>
+                            <p>Введение</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-navbar">
+                <div class="main-navbar-header">
+                    <p>Фильтры</p>
                 </div>
+                <ul class="main-navbar-filters">
+                    <li>
+                        <p class="active">Сдано</p>
+                    </li>
+                    <li>
+                        <p class="active">Не сдано</p>
+                    </li>
+                    <li>
+                        <p class="active">Время на исходе</p>
+                    </li>
+                    <li>
+                        <p class="active">Время вышло</p>
+                    </li>
+                    <li>
+                        <p>ОАИП</p>
+                    </li>
+                    <li>
+                        <p>СПО</p>
+                    </li>
+                    <li>
+                        <p>СиАОД</p>
+                    </li>
+                </ul>
+            </div>
         </main>
         <div class="chin"></div>
     </div>
+    <script src="js/test.js"></script>
 </body>
+
 </html>
