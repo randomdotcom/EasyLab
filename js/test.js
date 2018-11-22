@@ -17,14 +17,24 @@ function showTest() {
     countNumber = 0;
     testBlock.style.display = "block";
     renderTest();
+    access = false;
 }
 
 function giveAccess(access) {
     if (access) {
         alert('Вы получили доступ к лабораторной работе')
     }
-    else{
+    else {
         alert('Доступа нету, попробуйте позже');
+        for (var i = 0; i < labs.length; i++) {
+            labs[i].style.display = "none";
+        }
+        setTimeout(function () {
+            for (var i = 0; i < labs.length; i++) {
+                labs[i].style.display = "inline";
+            }
+            alert("Доступ восстановлен");
+        }, 30000);
     }
 
 }
